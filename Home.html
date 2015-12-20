@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        
+        <title>Menu</title>
+		<link rel= "stylesheet" href="cheapoMail.css" type="text/css">
+    </head>
+    <body>
+    	<div class="header">
+               <h2> Cheapo Mail </h2>
+    </div><br/><br />
+
+<h2>Welcome to your Inbox<br />
+<a href="message.html" class="linker">Compose Message</a><br /> 
+<h3>Unread Messages(<?php echo intval(mysql_num_rows($req1)); ?>):</h3>
+<table class="isBody" action=http://localhost/msglist.php>
+	<tr>
+    	<th class="title_cell">Title</th>
+        <th>No. Replies</th>
+        <th>User</th>
+        <th>Date </th>
+    </tr>
+	
+</table>
+<br />
+<h3>Read Messages(<?php echo intval(mysql_num_rows($req2)); ?>):</h3>
+<table class="isBody">
+	<tr>
+    	<th class="title_cell">Title</th>
+        <th>No. Replies</th>
+        <th>User</th>
+        <th>Date </th>
+    </tr>
+	<
+</table></br>
+      
+
+<h2><a href="http://localhost/userLogin.php" class="linker">Logout</a>
+		
+	</body>
+</html>

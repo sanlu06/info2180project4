@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Cheapo Mail Messaging Option</title>
+		<link rel= "stylesheet" href="cheapoMail.css" type="text/css">
+	</head>
+	
+	<body>
+	<div class="header">
+               <h2> Cheapo Mail </h2>
+    </div><br/><br />
+
+	
+	
+	
+	
+	
+	<h2>Compose Message </h2>
+	
+		<form class="isBody" method="post" action="http://localhost/message.php">
+		
+			<label>To:</label>
+			<input name='to' placeholder="RECIPIENT" class="test" type="text" id='recip'  /><br><br>
+			
+			<label>Subject:</label>
+			<input name='title' placeholder="SUBJECT" class="test" type="text" id='title'  /><br><br>
+			
+			<label>Body:</label><br><br>
+			<textarea name='message' id='isMessage'  rows="15" cols="70" class='test'></textarea> 
+			
+			
+			<input id='user_ID' type='hidden' name='user_ID'/>
+			<input id="createuser"value="Send" type="submit"/>
+		
+		</form>
+		<h2><a href="Home.html" class="linker">Home</a>
+	</body>
+	
+</html> 
